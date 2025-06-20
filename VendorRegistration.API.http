@@ -1,0 +1,12 @@
+POST http://localhost:5268/api/vendors/register
+Content-Type: application/json
+
+{
+  "businessName": "Khulyso Traiding",
+  "businessType": "Others",
+  "taxId": "12345690",
+  "yearEstablished": 2016,
+  "numberOfEmployees": "ElevenToFifty",
+  "website": "https://Khulysotrading.co.za",
+  "businessDescription": "Supplier of quality cleaning equipment."
+}
