@@ -1,4 +1,16 @@
-.env
-bin
-objbin/
+# Don't commit compiled binaries
+bin/
 obj/
+
+# Don't commit environment config
+.env
+
+# Optional: VS Code config
+.vscode/
+
+# Optional: Rider or JetBrains IDE
+.idea/
+
+# Optional: user-specific .NET files
+*.user
+*.suo

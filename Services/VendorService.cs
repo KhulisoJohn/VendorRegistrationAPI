@@ -1,10 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
-using VendorRegistration.API.Data;
-using VendorRegistration.API.Models;
+using VendorRegistrationAPI.Data;
+using VendorRegistrationAPI.Models;
 
 
-namespace VendorRegistrationApi.Services
+namespace VendorRegistrationAPI.Services
 {
     public class VendorService
     {
@@ -15,7 +15,7 @@ namespace VendorRegistrationApi.Services
             _dbContext = dbContext;
         }
 
-        public async Task<(bool IsValid, List<ValidationResult> Errors, Vendor Vendor)> RegisterVendorStep1Async(VendorRegistrationDto dto)
+        public async Task<(bool IsValid, List<ValidationResult> Errors, Vendor Vendor)> RegisterVendorAsync(VendorRegistrationDto dto)
         {
             // Manual validation in addition to DataAnnotations
             var validationResults = new List<ValidationResult>();

@@ -1,4 +1,4 @@
-namespace VendorRegistration.API.Models
+namespace VendorRegistrationAPI.Models
 {
    
     public enum EmployeeRange

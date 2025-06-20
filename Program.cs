@@ -1,6 +1,6 @@
-using VendorRegistration.API.Data;
-using VendorRegistration.API.Models;
-using VendorRegistrationApi.Services;
+using VendorRegistrationAPI.Data;
+using VendorRegistrationAPI.Models;
+using VendorRegistrationAPI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.Json;
 using System.Text.Json;
@@ -56,7 +56,7 @@ app.MapPost("/api/vendors/register", async (
     VendorRegistrationDto dto,
     VendorService vendorService) =>
 {
-    var (isValid, errors, vendor) = await vendorService.RegisterVendorStep1Async(dto);
+    var (isValid, errors, vendor) = await vendorService.RegisterVendorAsync(dto);
 
     if (!isValid)
         return Results.BadRequest(errors);

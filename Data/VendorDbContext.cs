@@ -1,8 +1,8 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using VendorRegistration.API.Models;
+using VendorRegistrationAPI.Models;
 
-namespace VendorRegistration.API.Data
+namespace VendorRegistrationAPI.Data
 {
     public class VendorDbContext : DbContext
     {

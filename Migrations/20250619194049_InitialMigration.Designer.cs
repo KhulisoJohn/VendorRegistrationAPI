@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using VendorRegistration.API.Data;
+using VendorRegistrationAPI.Data;
 
 #nullable disable
 
-namespace VendorRegistration.API.Migrations
+namespace VendorRegistrationAPI.Migrations
 {
     [DbContext(typeof(VendorDbContext))]
     [Migration("20250619194049_InitialMigration")]
