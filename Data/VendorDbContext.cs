@@ -17,11 +17,11 @@ namespace VendorRegistrationAPI.Data
             base.OnModelCreating(modelBuilder);
 
             //Enums stored as readable on the database
-            modelBuilder.Entity<Vendor>().Property(v => v.businessType).HasConversion<string>();
+            modelBuilder.Entity<Vendor>().Property(static v => v.businessType).HasConversion<string>();
 
-            modelBuilder.Entity<Vendor>().Property(v => v.NumberOfEmployees).HasConversion<string>();
+            modelBuilder.Entity<Vendor>().Property(static v => v.NumberOfEmployees).HasConversion<string>();
 
-            modelBuilder.Entity<Vendor>().Property(v => v.Status).HasConversion<string>();
+            modelBuilder.Entity<Vendor>().Property(static v => v.Status).HasConversion<string>();
         }
    }
 

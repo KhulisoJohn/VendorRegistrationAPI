@@ -13,7 +13,7 @@ namespace VendorRegistrationAPI.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Vendors",
-                columns: table => new
+                columns: static table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
@@ -26,9 +26,9 @@ namespace VendorRegistrationAPI.Migrations
                     BusinessDescription = table.Column<string>(type: "text", nullable: false),
                     Status = table.Column<string>(type: "text", nullable: false)
                 },
-                constraints: table =>
+                constraints: static table =>
                 {
-                    table.PrimaryKey("PK_Vendors", x => x.Id);
+                    table.PrimaryKey("PK_Vendors", static x => x.Id);
                 });
         }
 
